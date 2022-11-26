@@ -303,6 +303,13 @@ return [
 
         // Sidebar items:
         [
+            'text' => 'Buku',
+            'url' => 'admin/books',
+            'icon' => 'fas fa-fw fa-book',
+            'can' => 'isAdmin',
+        ],
+
+        [
             'type' => 'sidebar-menu-search',
             'text' => 'search',
         ],

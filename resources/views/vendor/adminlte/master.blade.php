@@ -163,10 +163,15 @@
                 Swal.fire({
                     type: 'error',
                     title: "Oops",
-                    text: "{{ $error }}",
+                    text: "Terjadi suatu kesalahan",
                 })
             @endforeach
         @endif
+
+        $('#table-data').DataTable();
+
+        let baseurl = "<?=url('/')?>";
+        let fullURL = "<?=url()->full()?>";
     </script>
 
 </body>
