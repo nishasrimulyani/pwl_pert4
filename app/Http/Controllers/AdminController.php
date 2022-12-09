@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Validation\ValidationException;
+use Maatwebsite\Excel\Facades\Excel;
+use App\Exports\BooksExport;
 
 use App\Models\Book;
 use PDF;
@@ -132,5 +134,10 @@ class AdminController extends Controller
 
         $pdf = PDF::loadview('print_books', ['books' => $books]);
         return $pdf->download('data_buku.pdf');
+    }
+
+    public function export()
+    {
+        return Excel::download(new BooksExport, 'books.xlsx');
     }
 }
