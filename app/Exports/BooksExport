@@ -8,7 +8,11 @@ use Maatwebsite\Excel\Concerns\FromArray;
 use Maatwebsite\Excel\Concerns\WithHeadings;
 use Maatwebsite\Excel\Concerns\ShouldAutosize;
 
-class BooksExport implements FromCollection {
+class BooksExport implements FromArray, WithHeadings, ShouldAutoSize
+{
+    /**
+    * @return \Illuminate\Support\Collection
+    */
     public function collection()
     {
         return Book::all();
@@ -21,7 +25,7 @@ class BooksExport implements FromCollection {
 
     public function headings(): array
     {
-        return [
+        return[
             'No',
             'Judul',
             'Penulis',
