@@ -41,9 +41,11 @@ php artisan serve
 ```
 
 ## Deskripsi Fitur
+```sh
 Tambah Data     : untuk menambahkan data buku 
 Edit            : Untuk mengedit data buku yang telah ditambhakan sebelumnya
 Hapus           : Untuk menghapus data buku yang telah dimasukan sebelumnya
 Cetak PDF       : Untuk mencetak data-data buku yang sudah dimasukan dalam bentuk PDF
 Export          : Untuk mencetak data-data buku yang sudah dimasukan dalam bentuk Excel
 Import          : Untuk memasukan data-data buku yang awalnya berbentuk Excel ke dalam halaman Buku
+```
