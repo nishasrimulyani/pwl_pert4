@@ -2,7 +2,7 @@
 Repository ini dibuat untuk memenuhi tugas Praktikum Pemrograman Web Lanjut Shift-5
 
 
-## Install
+## Instalasi
 
 ```sh
 npm install
